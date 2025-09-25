@@ -4,7 +4,7 @@ import React from "react";
 
 const Button = (props) => {
   return (
-    <button className="relative py-3 px-6 rounded-xl font-medium text-lg bg-gradient-to-b from-[#C8A951] to-[#A88F42] shadow-[0px_0px_14px_#C8A951]">
+    <button className="relative hover:cursor-pointer py-3 px-6 rounded-xl font-medium text-lg bg-gradient-to-b from-[#C8A951] to-[#A88F42] shadow-[0px_0px_14px_#C8A951]">
       {/* Decorative layers for shine and depth */}
       <div className="absolute inset-0">
         <div className="rounded-xl border border-white/20 absolute inset-0 [mask-image:linear-gradient(to_bottom, black, transparent)]"></div>

@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import Button from "../components/Button";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -24,22 +26,24 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-14">
             <div className="hidden md:flex items-center gap-8 border border-white/20 rounded-xl px-6 py-3 shadow-[0px_0px_10px_rgb(200,201,81,0.3)]">
               <nav className="flex gap-10 text-lg">
-                <a
-                  href="#"
+                <Link
+                  href="/"
                   className="text-white/70 hover:text-white transition"
                 >
                   Home
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  href="/About"
                   className="text-white/70 hover:text-white transition"
                 >
                   About
-                </a>
+                </Link>
               </nav>
             </div>
 
-            <Button>Book Service now</Button>
+            <Link href="/ServicesPage">
+              <Button>Book Service now</Button>
+            </Link>
           </div>
         </div>
       </div>
