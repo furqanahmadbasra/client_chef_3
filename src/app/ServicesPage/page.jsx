@@ -90,7 +90,7 @@ const ServicesPage = () => {
                 </p>
                 <p className="text-[#D0D0D0] mb-6">{pkg.desc}</p>
                 <a
-                  href="#"
+                  href="/Booking"
                   className="mt-auto block text-center px-6 py-3 bg-[#C8A951] text-black font-semibold rounded-lg hover:bg-black hover:text-[#C8A951] transition-colors duration-300"
                 >
                   Book Now
