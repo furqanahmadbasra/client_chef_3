@@ -1,22 +1,3 @@
-// import React from 'react'
-// import DomeGallery from '../../PageComponents/DomeGallery';
-
-// const ServicesPage = () => {
-//   return (
-//     <div>
-//       how are you
-      
-//       <div className="w-full h-[60vh] min-h-[400px] md:h-[70vh] lg:h-[80vh]">
-//         <DomeGallery />
-//       </div>
-      
-//       how are you 
-//     </div>
-//   )
-// }
-
-// export default ServicesPage
-
 
 "use client";
 import React from "react";
@@ -27,37 +8,37 @@ const packages = [
     name: "Luxury Celebration Dining",
     price: "$350",
     desc: "An unforgettable dining experience for your special occasions.",
-    img: "/images/dining1.jpg", // placeholder
+    img: "/services/service1.avif", // placeholder
   },
   {
     name: "Private Romantic Dinner",
     price: "$500",
     desc: "Exquisite, intimate dining with curated flavors.",
-    img: "/images/dining2.jpg",
+    img: "/services/service1.avif",
   },
   {
     name: "Corporate Gourmet Package",
     price: "$800",
     desc: "Luxury dining tailored for corporate events and teams.",
-    img: "/images/dining3.jpg",
+    img: "/services/service1.avif",
   },
   {
     name: "Family Feast",
     price: "$400",
     desc: "A warm, lavish meal designed for family gatherings.",
-    img: "/images/dining4.jpg",
+    img: "/services/service1.avif",
   },
   {
     name: "Chef’s Signature Experience",
     price: "$1000",
     desc: "Exclusive tasting menu by our master chef.",
-    img: "/images/dining5.jpg",
+    img: "/services/service1.avif",
   },
   {
     name: "Cultural Fusion Dining",
     price: "$600",
     desc: "A global journey of flavors in a single evening.",
-    img: "/images/dining6.jpg",
+    img: "/services/service1.avif",
   },
 ];
 
@@ -69,7 +50,7 @@ const ServicesPage = () => {
         <h1 className="text-4xl md:text-5xl font-bold text-[#F5F5F5] mb-4">
           Our Exclusive Dining Packages
         </h1>
-        <p className="text-lg md:text-xl text-[#C0C0C0] max-w-3xl mx-auto mb-10">
+        <p className="text-lg md:text-xl text-[#C0C0C0] max-w-3xl mx-auto mb-20">
           Choose from a curated selection of luxury dining experiences, tailored
           to your needs.
         </p>
@@ -82,7 +63,7 @@ const ServicesPage = () => {
         {/* CTA Button */}
         <a
           href="#packages"
-          className="inline-block mt-10 px-8 py-4 bg-[#C8A951] text-black font-semibold rounded-xl shadow-lg hover:bg-[#B8654D] transition-colors duration-300"
+          className="inline-block mt-20 px-8 py-4 bg-[#C8A951] text-black font-semibold rounded-xl shadow-lg hover:bg-[#B8654D] transition-colors duration-300"
         >
           Book Your Service Today
         </a>
@@ -97,7 +78,7 @@ const ServicesPage = () => {
           {packages.map((pkg, idx) => (
             <div
               key={idx}
-              className="bg-[#3C3C3C] rounded-2xl overflow-hidden flex flex-col shadow-lg hover:bg-[#B8654D] transition-colors duration-300"
+              className="rounded-2xl overflow-hidden flex flex-col shadow-lg border border-white/10 hover:bg-[#1A1A1A] transition-colors duration-300"
             >
               {/* Image Banner */}
               <div className="h-40 w-full bg-black">
@@ -119,7 +100,7 @@ const ServicesPage = () => {
                 <p className="text-[#D0D0D0] mb-6">{pkg.desc}</p>
                 <a
                   href="#"
-                  className="mt-auto inline-block px-6 py-3 bg-[#C8A951] text-black font-semibold rounded-lg hover:bg-black hover:text-[#C8A951] transition-colors duration-300"
+                  className="mt-auto block text-center px-6 py-3 bg-[#C8A951] text-black font-semibold rounded-lg hover:bg-black hover:text-[#C8A951] transition-colors duration-300"
                 >
                   Book Now
                 </a>
