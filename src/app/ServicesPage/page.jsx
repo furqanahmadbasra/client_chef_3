@@ -1,4 +1,3 @@
-
 "use client";
 import React from "react";
 import DomeGallery from "../../PageComponents/DomeGallery";
@@ -46,27 +45,19 @@ const ServicesPage = () => {
   return (
     <div className="bg-[#0A0A0A] text-[#F5F5F5] min-h-screen">
       {/* Hero Section */}
-      <section className="relative text-center py-16 md:py-24">
+      <section className="relative text-center pt-16 pb-4 md:py-24">
         <h1 className="text-4xl md:text-5xl font-bold text-[#F5F5F5] mb-4">
           Our Exclusive Dining Packages
         </h1>
-        <p className="text-lg md:text-xl text-[#C0C0C0] max-w-3xl mx-auto mb-20">
+        <p className="text-lg md:text-xl text-[#C0C0C0] max-w-3xl mx-auto mb-10">
           Choose from a curated selection of luxury dining experiences, tailored
           to your needs.
         </p>
 
-        {/* Dome Gallery as centerpiece */}
-        <div className="w-full h-[60vh] min-h-[400px] md:h-[70vh] lg:h-[80vh]">
-          <DomeGallery />
-        </div>
-
         {/* CTA Button */}
-        <a
-          href="#packages"
-          className="inline-block mt-20 px-8 py-4 bg-[#C8A951] text-black font-semibold rounded-xl shadow-lg hover:bg-[#B8654D] transition-colors duration-300"
-        >
-          Book Your Service Today
-        </a>
+        <h2 className="inline-block mt-5 text-3xl font-bold text-[#C8A951]">
+          BOOK YOUR SERVICE TODAY
+        </h2>
       </section>
 
       {/* Packages Section */}
@@ -118,6 +109,15 @@ const ServicesPage = () => {
         </p>
         <div className="w-24 h-1 bg-[#C8A951] mx-auto mt-6 rounded-full"></div>
       </section>
+
+      {/* Dome Gallery as centerpiece */}
+      {/* <div className="w-full h-[60vh] min-h-[400px] md:h-[70vh] lg:h-[80vh]">
+          <DomeGallery />
+        </div> */}
+      {/* Mobile: Smaller container with padding to prevent touch interference */}
+      <div className="w-full h-[50vh] min-h-[350px] max-w-[90vw] mx-auto md:max-w-none md:h-[70vh] lg:h-[80vh]">
+        <DomeGallery />
+      </div>
     </div>
   );
 };
